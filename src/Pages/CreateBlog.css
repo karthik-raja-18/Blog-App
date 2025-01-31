@@ -1,0 +1,123 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #000000; /* Black background for the page */
+  color: #ffffff; /* White text for high contrast */
+  line-height: 1.6;
+}
+
+/* Create Blog Form Styling */
+.create-blog-form {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #111111; /* Slightly lighter black for the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Soft shadow to create depth */
+}
+
+/* Header Styling */
+.create-blog-form h2 {
+  text-align: center;
+  color: #ffffff; /* White color for the header */
+  font-family: 'Poppins', sans-serif; /* Stylish font for header */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.create-blog-form .form-group {
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+.create-blog-form label {
+  font-size: 1.1rem;
+  color: #ccc; /* Light grey color for labels */
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input, Textarea, and Select Styling */
+.create-blog-form input,
+.create-blog-form textarea,
+.create-blog-form select {
+  width: 100%; /* Ensures all fields have the same width */
+  padding: 10px;
+  border: 2px solid #444; /* Dark border color */
+  border-radius: 5px;
+  background-color: #222; /* Darker background for input elements */
+  color: #fff; /* White text color */
+  font-size: 1rem;
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+  box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+/* Textarea Specific Styling */
+.create-blog-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Select Dropdown Styling */
+.create-blog-form select {
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+/* Button Styling */
+.create-blog-form button {
+  background-color: #11635c; /* Requested color for the button */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Button Hover Effect */
+.create-blog-form button:hover {
+  background-color: #1aa19c; /* Lighter shade for hover effect */
+}
+
+/* Focus Effect for Inputs and Textareas */
+.create-blog-form input:focus,
+.create-blog-form textarea:focus,
+.create-blog-form select:focus {
+  border-color: #870e36; /* Use the same color for focus effect */
+  outline: none; /* Remove default outline */
+}
+
+/* Disabled Input Styling */
+.create-blog-form input[type='text']:disabled,
+.create-blog-form textarea:disabled,
+.create-blog-form select:disabled {
+  background-color: #444; /* Darker background when disabled */
+}
+
+/* Placeholder Text Styling */
+.create-blog-form input[type='text']::placeholder,
+.create-blog-form textarea::placeholder {
+  color: #bbb; /* Light grey color for placeholder text */
+}
+
+/* Custom Category Input Styling */
+.create-blog-form input[type='text'] {
+  margin-top: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .create-blog-form {
+    padding: 20px;
+  }
+
+  .create-blog-form h2 {
+    font-size: 2rem; /* Smaller font size on mobile */
+  }
+}

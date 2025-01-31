@@ -1,0 +1,106 @@
+/* Blog Detail Page Styling */
+.blogDetailPage {
+    background-color: #000000; /* Black background for sleek look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .blogDetail {
+    background: linear-gradient(145deg,  #147981, #5fe4ff); /* Darker gradient from deep purple to teal */
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 0.8s ease-out; /* Smooth appearance */
+  }
+  
+  .blogDetail h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(145deg, #000000, #03505f); /* Gradient text */
+    -webkit-background-clip: text; /* Clip background to text */
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+    text-align: center;
+    animation: gradientText 2s infinite; /* Animated gradient effect */
+  }
+  
+  .blogDetail p {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .blogDetail p strong {
+    font-weight: 600;
+    color: #000000; /* Highlight label with purple */
+  }
+  
+  .blogDetail img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  /* Button Styling */
+  .backButton {
+    display: block;
+    width: 200px;
+    padding: 12px;
+    background-color: #6b181a; /* Use purple color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px auto 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .backButton:hover {
+    background-color: #590c4b; /* Darker shade of purple for hover */
+  }
+  
+  /* Loading State */
+  .blogDetailPage > div {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #00aaff; /* Light blue color for loading text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .blogDetail {
+      padding: 20px;
+    }
+  
+    .blogDetail h1 {
+      font-size: 2rem;
+    }
+  
+    .backButton {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

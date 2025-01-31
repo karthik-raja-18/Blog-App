@@ -1,0 +1,83 @@
+/* Register Page Styling */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(0, 0, 0); /* Black background */
+}
+
+.register-form {
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent black for the form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(169, 169, 169, 0.4); /* Light grey shadow */
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(to right,  #71b1b6, #80b3be); /* Gradient from dark pink to light pink */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background: linear-gradient(to right, #dcdcdc, #a8a8a8); /* Grey gradient for inputs */
+  color: #333; /* Dark text color */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #ff5f5f; /* Change border to pink on focus */
+}
+
+.register-button {
+  width: 100%; /* Match the input width */
+  padding: 12px; /* Same height as input */
+  font-size: 16px;
+  background-color:  #0e7f87; /* Dark pink */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.register-button:hover {
+  background-color:  #196372; /* Lighter pink on hover */
+}
+
+.login-link p{
+  text-align: center;
+  margin-top: 15px;
+  color: #bb0900;
+}
+
+.login-link-text {
+  color: #156072; /* Lighter pink color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link-text:hover {
+  text-decoration: underline;
+  color: #870e36; /* Darker pink on hover */
+}

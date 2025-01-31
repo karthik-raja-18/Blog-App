@@ -1,0 +1,99 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Subscription Page Container */
+.subscription-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Subscription Form Styling */
+.subscription-form {
+    max-width: 500px;
+    padding: 30px;
+    background-color: #231e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+.subscription-form h2 {
+    text-align: center;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.subscription-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+.subscription-form label {
+    font-size: 1.1rem;
+    color: #ccc;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input, Select Styling */
+
+.subscription-form input,
+.subscription-form select,
+.subscription-form button {
+    width: 100%; /* Ensure all input fields and buttons take full width */
+    padding: 12px; /* Same padding for consistency */
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.subscription-form input{
+    width: 92.5%;
+}
+
+/* Button Styling */
+.subscription-form button {
+    background-color:  #0e7f87;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscription-form button:hover {
+    background-color:  #12696f;
+}
+
+/* Focus Effect */
+.subscription-form input:focus,
+.subscription-form select:focus,
+.subscription-form button:focus {
+    border-color: #870e36;
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .subscription-form {
+        padding: 20px;
+    }
+
+    .subscription-form h2 {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,156 @@
+/* General Page Styling */
+.my-blogs {
+  background-color: #000000; /* Dark background for the whole page */
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #ff416c; /* Change border color on focus */
+  outline: none;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #ff416c;
+}
+
+.category {
+  color: #ddd;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #1683a1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #117c7c;
+}
+
+/* Styling for Blog List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 30px;
+  /* background: linear-gradient(145deg, #5d3fd3, #9b4cbb);
+   */
+   background: linear-gradient(145deg,  #0e7f87, #7c8587); /* Darker gradient from deep purple to teal */
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+/* Edit Form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.edit-form input,
+.edit-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #222;
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.edit-form input:focus,
+.edit-form textarea:focus {
+  border-color: #ff416c;
+  outline: none;
+}
+
+.edit-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff416c;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-form button:hover {
+  background-color: #ff4b2b;
+}
+
+.edit-form button:last-child {
+  background-color: #ddd;
+  color: #333;
+}
+
+.edit-form button:last-child:hover {
+  background-color: #bbb;
+}
+
+/* No Blogs Message */
+p {
+  color: #000000;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .my-blogs {
+    padding: 10px;
+  }
+
+  .edit-form {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+}

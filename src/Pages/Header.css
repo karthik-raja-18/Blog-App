@@ -1,0 +1,109 @@
+/* Header Styles */
+.header {
+  color: white;
+  display: flex;
+  /* background: linear-gradient(145deg,  #95a2a2,rgb(221, 221, 221));
+   */
+   background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  border-radius:20px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px); 
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-10px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header nav a {
+  color:  #0e7f87; /* Cyan color text for contrast */
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  border-radius: 5px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gold gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 1px; /* Slight spacing for better readability */
+}
+
+header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ff69b4; /* Hot pink color on hover */
+  transition: color 0.3s ease-in-out;
+  text-transform: uppercase; /* Uppercase on hover for added impact */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  padding: 8px 12px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 250px;
+  transition: width 0.3s ease-in-out;
+  font-family: 'Roboto', sans-serif; /* More modern font for search input */
+  font-size: 1rem;
+  color: #333;
+}
+
+.search-bar:focus {
+  width: 300px; /* Expand search bar on focus */
+  border-color: #00ffcc; /* Cyan border color when focused */
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.5); /* Light cyan glow */
+}
+
+.search-icon {
+  color: #00ffcc;
+  font-size: 1.5rem;
+}
+
+.search-container:hover .search-icon {
+  color: #ff69b4; /* Change color of icon on hover to hot pink */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .search-container {
+    margin-top: 15px;
+  }
+}
