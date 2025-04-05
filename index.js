@@ -4,10 +4,13 @@ const bcrypt = require('bcrypt');
 const cors = require('cors');
 const app = express();
 
+
+
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'http://localhost:3000', // Allow requests from React frontend
     credentials: true
 }));
+
 
 app.use(express.json());
 
@@ -327,6 +330,7 @@ router.post('/login', async (req, res) => {
   // const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+
 
 
 app.use(bodyParser.json());
