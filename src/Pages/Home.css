@@ -1,7 +1,7 @@
 /* Home Page Styling */
 .homePage {
-  background-color: #080000; /* Dark grey background for contrast */
-  color: white;
+  background-color: #0d0d0d; /* Deep black background for rich contrast */
+  color: #f1f1f1;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   padding: 20px;
@@ -16,43 +16,47 @@
 
 .title {
   font-size: 3rem;
-  color: #891649;; /* Warm color for the title */
+  color: #00bcd4; /* Bright cyan for headline */
   animation: fadeInUp 2s ease-in-out;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: #97808e; /* Light grey for subtitle */
-  opacity: 0.8;
+  color: #ffa07a; /* Soft coral for subtitle */
+  opacity: 0.9;
   animation: fadeInUp 3s ease-in-out;
 }
 
 /* Blog Section */
 .blogContainer {
   margin-top: 50px;
+  padding: 0 30px;
 }
 
 .blogCard {
-  background: linear-gradient(145deg,  #0e7f87, #7c8587); /* Slightly lighter purple gradient */
-  border-radius: 10px;
-  padding: 20px;
-  margin: 15px 0;
+  background: linear-gradient(135deg, #1a1a1a, #2c2c2c); /* Smooth dark gradient */
+  border-left: 6px solid #00bcd4; /* Cyan border accent */
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px 0;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .blogCard:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.3);
 }
 
 .blogCard h3 {
-  color: rgb(134, 6, 21);
-  font-size: 1.5rem;
+  color: #ffa07a; /* Coral headline */
+  font-size: 1.6rem;
+  margin-bottom: 10px;
 }
 
 .blogCard p {
-  color: #000000; /* Light grey for text */
+  color: #e0e0e0; /* Light grey text */
+  line-height: 1.6;
 }
 
 /* Animation for fadeIn effect */
@@ -69,12 +73,12 @@
 
 /* Navbar Styling */
 .navbar {
-  background: linear-gradient(90deg, #0e7f87, #5fe4ff); /* Warm gradient for navbar */
+  background: linear-gradient(90deg, #00bcd4, #ff6f61); /* Cyan to coral gradient */
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for navbar */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .navLinks {
@@ -87,46 +91,51 @@
 }
 
 .link {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .link:hover {
-  color: #ff416c; /* Pink color on hover */
+  color: #ffd700; /* Gold on hover */
 }
 
 /* Search Form Styling */
 .searchForm {
   display: flex;
+  align-items: center;
 }
 
 .searchInput {
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #444;
+  border-radius: 6px;
   margin-right: 10px;
+  background-color: #1f1f1f;
+  color: #f1f1f1;
   transition: border-color 0.3s ease;
 }
 
 .searchInput:focus {
-  border-color: #FF6F61; /* Warm pink on focus */
+  border-color: #00bcd4;
 }
 
 .searchButton {
-  background-color: #FF6F61;
-  color: rgb(88, 129, 134);
+  background-color: #ff6f61;
+  color: white;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: 600;
   transition: background-color 0.3s ease;
 }
 
 .searchButton:hover {
-  background-color: #ff416c; /* Darker pink on hover */
+  background-color: #e2574c;
 }
 
 /* Menu Button Styling for Mobile */
@@ -138,6 +147,7 @@
   cursor: pointer;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .navLinks {
     display: none;
@@ -160,5 +170,9 @@
 
   .searchInput {
     width: 100%;
+  }
+
+  .blogContainer {
+    padding: 0 15px;
   }
 }

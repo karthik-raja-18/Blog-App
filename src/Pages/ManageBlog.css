@@ -1,40 +1,52 @@
 /* General Page Styling */
 .my-blogs {
-  background-color: #000000; /* Dark background for the whole page */
-  color: #fff;
+  background-color: #0d0d0d; /* Rich dark background */
+  color: #f1f1f1;
   font-family: 'Poppins', sans-serif;
-  padding: 20px;
+  padding: 30px;
   min-height: 100vh;
 }
 
+/* Search Bar */
 .search-bar {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
+  padding: 14px 16px;
+  margin-bottom: 30px;
   border: 1px solid #444;
-  border-radius: 8px;
-  background-color: #333;
+  border-radius: 10px;
+  background-color: #222;
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   transition: all 0.3s ease;
 }
 
 .search-bar:focus {
-  border-color: #ff416c; /* Change border color on focus */
+  border-color: #ff416c;
   outline: none;
 }
 
+/* Heading */
 h3 {
-  font-size: 1.5rem;
-  color: #ff416c;
+  font-size: 1.8rem;
+  color: #00bcd4;
+  margin-bottom: 12px;
 }
 
+/* Category Label - highlighted */
 .category {
-  color: #ddd;
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #1e90ff; /* Bright blue highlight */
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
+/* Buttons */
 button {
-  padding: 10px 15px;
+  padding: 12px 18px;
   background-color: #1683a1;
   color: #fff;
   border: none;
@@ -49,7 +61,7 @@ button:hover {
   background-color: #117c7c;
 }
 
-/* Styling for Blog List */
+/* Blog List */
 ul {
   list-style: none;
   padding: 0;
@@ -57,23 +69,21 @@ ul {
 
 li {
   margin-bottom: 30px;
-  /* background: linear-gradient(145deg, #5d3fd3, #9b4cbb);
-   */
-   background: linear-gradient(145deg,  #0e7f87, #7c8587); /* Darker gradient from deep purple to teal */
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #1a1a1a, #2c2c2c);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.15);
   transition: transform 0.3s ease;
 }
 
 li:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px);
 }
 
-h3 {
-  font-size: 1.8rem;
-  color: #000000;
-  margin-bottom: 50px;
+li h3 {
+  font-size: 1.6rem;
+  color: #ffa07a;
+  margin-bottom: 10px;
 }
 
 /* Edit Form */
@@ -81,18 +91,19 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background-color: #333;
-  padding: 20px;
-  border-radius: 10px;
+  background-color: #262626;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
 }
 
 .edit-form input,
 .edit-form textarea {
-  padding: 12px;
-  font-size: 16px;
+  padding: 14px;
+  font-size: 1rem;
   border: 1px solid #444;
   border-radius: 8px;
-  background-color: #222;
+  background-color: #1e1e1e;
   color: #fff;
   transition: border-color 0.3s ease;
 }
@@ -103,14 +114,16 @@ h3 {
   outline: none;
 }
 
+/* Submit Button */
 .edit-form button {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   background-color: #ff416c;
   border: none;
   border-radius: 8px;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -119,9 +132,10 @@ h3 {
   background-color: #ff4b2b;
 }
 
+/* Cancel Button */
 .edit-form button:last-child {
   background-color: #ddd;
-  color: #333;
+  color: #222;
 }
 
 .edit-form button:last-child:hover {
@@ -130,20 +144,20 @@ h3 {
 
 /* No Blogs Message */
 p {
-  color: #000000;
+  color: #ccc;
   font-size: 1.2rem;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .my-blogs {
-    padding: 10px;
+    padding: 15px;
   }
 
   .edit-form {
-    padding: 15px;
+    padding: 20px;
   }
 
   button {

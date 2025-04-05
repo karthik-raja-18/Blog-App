@@ -1,8 +1,8 @@
 /* Index Page Styles */
 .index-container {
-  background-color: rgb(0, 0, 0); /* Black background */
-  color: white; /* Default text color */
-  height: 100vh; /* Full viewport height */
+  background-color: #0a0a0a;
+  color: #ffffff;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,87 +10,82 @@
   text-align: center;
   padding: 20px;
   opacity: 0;
-  animation: fadeIn 2s forwards; /* Fade-in animation */
+  animation: fadeIn 2s forwards;
 }
 
 /* Fade-in animation for the whole page */
 @keyframes fadeIn {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* Welcome Title */
 .welcome-title {
   font-size: 3rem;
-  font-weight: bold;
-  background: linear-gradient(to right, #0c5e64, #5fe4ff); /* Gradient from dark pink to light pink */
-  -webkit-background-clip: text; /* Clip the background to the text */
+  font-weight: 700;
+  background: linear-gradient(to right, #00fff0, #0072ff);
+  -webkit-background-clip: text;
   background-clip: text;
-  color: transparent; /* Make the text color transparent to show gradient */
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-  animation: textSlide 2s ease-out; /* Slide-in animation for the title */
+  color: transparent;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
+  animation: textSlide 1.5s ease-out;
 }
 
-/* Text sliding animation */
+/* Slide in animation */
 @keyframes textSlide {
   0% {
-      transform: translateY(-50px);
-      opacity: 0;
+    transform: translateY(-60px);
+    opacity: 0;
   }
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 /* Welcome Message */
 .welcome-message {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  max-width: 600px;
+  color: #cccccc;
   margin-bottom: 40px;
-  color: #5c1b1b; /* Slightly off-white color for the message */
-  animation: fadeInMessage 2s ease-in-out; /* Fade-in effect for the message */
+  font-family: 'Roboto', sans-serif;
+  animation: fadeInMessage 2.5s ease-in-out;
 }
 
-/* Fade-in animation for the message */
+/* Message animation */
 @keyframes fadeInMessage {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* Get Started Button */
 .get-started-button {
-  font-size: 1.2rem;
-  padding: 12px 25px;
-  background-color:  #0e7f87; /* Dark pinkish color */
-  color: white;
+  font-size: 1.1rem;
+  padding: 14px 30px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Added scale on hover */
-  animation: buttonFadeIn 3s ease-in-out; /* Fade-in animation for the button */
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: buttonFadeIn 3s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
 }
 
-/* Button hover effect */
 .get-started-button:hover {
-  background-color:   #0c5564; /* Lighter pink color on hover */
-  transform: scale(1.1); /* Slightly larger button on hover */
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.5);
+  background: linear-gradient(to right, #00ffcb, #0acffe);
+  color: #111;
 }
 
-/* Fade-in animation for the button */
+/* Button animation */
 @keyframes buttonFadeIn {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

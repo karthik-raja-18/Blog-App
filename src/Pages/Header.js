@@ -8,7 +8,7 @@ export default function Header() {
     <header className="header">
 <h3
   style={{
-    color:' #0e7f87',
+    color:'#7e104b'   ,
     fontSize: '2.5rem', /* Slightly bigger font size */
     fontWeight: 'bold',
     fontFamily: 'Poppins, sans-serif', /* Using Poppins font family */
